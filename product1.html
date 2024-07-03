@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iphone 15 Pro</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .gallery-container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .gallery {
+            display: flex;
+            background-color: #464749;
+            margin-top: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" style="text-decoration: none;">
+            <span class="material-symbols-outlined"
+                style="color: rgb(255, 255, 255);font-size: 1.4em;margin: 20px;text-decoration: none;">
+                arrow_back
+            </span>
+            <span style="color: rgb(255, 255, 255);font-size: 1.4em;margin: 20px;text-decoration: none;">iPhone 15
+                Pro</span>
+        </a>
+    </header>
+
+    <main class="main-container">
+        <div class="gallery-container">
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <div class="gallery">
+                <img id="img" src="./images/iphone-15-1-1.webp" alt="Image 1">
+            </div>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+        <div style="margin: 250px 100px 0px 100px;">
+            <p style="font-size: 2.2em; font-weight: 800;">
+                iPhone 15 Pro
+            </p>
+            <p style="font-size: 1.4em; font-weight: 400;">
+                Pick your favourite.
+            </p>
+            <p>
+                Color - <span id="colorName">Natural Titanium</span>
+            </p>
+            <div style="display: flex;gap: 10px;padding-left: 50px;">
+                <div id="NaturalTitanium" onclick="changeColor('NaturalTitanium')" class="color-container selected"
+                    title="Natural Titanium">
+                    <div class="colour" style="background-color: #B9B4AA;"></div>
+                </div>
+                <div id="BlueTitanium" onclick="changeColor('BlueTitanium')" class="color-container ">
+                    <div class="colour" style="background-color: #575E6B;"></div>
+                </div>
+                <div id="WhiteTitanium" onclick="changeColor('WhiteTitanium')" class="color-container ">
+                    <div class="colour" style="background-color: #F3F2ED;"></div>
+                </div>
+                <div id="BlackTitanium" onclick="changeColor('BlackTitanium')" class="color-container ">
+                    <div class="colour" style="background-color: #464749;"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div>
+        <div
+            style="display: flex;padding: 30px 75px 0px 75px;background-color: #F5F5F7;align-items: flex-start;justify-content: space-between;">
+            <div style="display: flex;align-items: center;justify-content: center;gap: 10px;flex-direction: column;">
+                <p style="font-size: 2em; font-weight: 600; padding: 0;margin: 10px;">Your new iPhone 15 Pro</p>
+                <p style="font-size: 1.8em;font-weight: 600;opacity: 0.25; padding: 0; margin: 0;">Just the way you want
+                    it.</p>
+                <img id="second-img" src="./images/iphone-15-1-5.jpeg" style="margin: 18px 0px 0px 0px;width: 60%;"
+                    alt="">
+            </div>
+            <div style="margin: 0px 20px;padding: 0px 50px;" >
+                <p style="text-align: start;" >
+                    iPhone 15 Pro 1TB Blue Titanium From ₹8329.00/mo.Per Month for 24 mo. with No Cost EMI with
+                    selected banksFootnote
+                </p>
+                <p style="text-align: start;" >
+                    or
+                </p>
+                <p style="text-align: start;" >
+                    MRP ₹199900.00
+                    (Incl. of all taxes)
+                </p>
+            </div>
+            <div>
+                <p style="display: flex; align-items: center;justify-content: center;gap: 10px;">
+                    <span class="material-symbols-outlined">
+                        local_shipping
+                    </span>
+                    <span>
+                        Free Shipping
+                    </span>
+                </p>
+                <p style="display: flex;align-items: center;justify-content: center;gap: 10px;">
+                    <span class="material-symbols-outlined">
+                        shopping_bag
+                    </span>
+                    <span>
+                        Pick up in Store
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div>
+            <p style="margin-top: 120px; font-weight: 600; font-size: 1.9em;"> What's in the Box </p>
+            <div style="display: flex;align-items: center;justify-content: center;gap: 10px;height: 100%;scale: 0.75;">
+                <img id="third-img" src="./images/iphone-15-1-6.jpeg" alt="">
+                <img src="./images/iphone-15-pro-braided-cable-witb-202309.jpeg" alt="">
+            </div>
+            <div>
+                <p style="font-size: 1.6em;font-weight: 600;opacity: 0.6;">Our environmental goals.</p>
+
+                <p style="font-size: 1.2em;font-weight: 400;padding: 0px 10vw;"> As part of our efforts to reach carbon
+                    neutrality by 2030, iPhone 15 Pro and iPhone 15 Pro do
+                    not
+                    include a power adapter or EarPods. Included in the box is a USB‑C Charge Cable that supports fast
+                    charging and is compatible with USB‑C power adapters and computer ports.</p>
+
+                <p style="font-size: 1.2em;font-weight: 400;padding: 60px 10vw 20px 10vw;"> We encourage you to use any
+                    compatible USB‑C power adapter. If you need a new Apple power adapter or
+                    headphones, they are available for purchase.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Desktop App</a></li>
+                    <li><a href="#">Web App</a></li>
+                    <li><a href="#">Mobile App</a></li>
+                    <li><a href="#">API</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let currentIndex = 1;
+        let selectedColorImage = 1;
+
+        const next = document.getElementsByClassName("next")[0];
+        const prev = document.getElementsByClassName("prev")[0];
+        const img = document.getElementById("img");
+
+        if (currentIndex === 4) {
+            next.style.display = "none"
+        }
+        else if (currentIndex === 1) {
+            prev.style.display = "none"
+        }
+        else {
+            next.style.display = "block"
+            prev.style.display = "block"
+        }
+
+        function showSlide(index) {
+            currentIndex = index;
+            img.src = `/images/iphone-15-${selectedColorImage}-${index}.webp`;
+            const next = document.getElementsByClassName("next")[0];
+            const prev = document.getElementsByClassName("prev")[0];
+
+            if (currentIndex === 4) {
+                next.style.display = "none"
+            }
+            else if (currentIndex === 1) {
+                prev.style.display = "none"
+            }
+            else {
+                next.style.display = "block"
+                prev.style.display = "block"
+            }
+        }
+
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+
+
+        let selectedColor = "NaturalTitanium";
+        let selectedColorText = document.getElementById("colorName");
+        let sec_img = document.getElementById("second-img");
+        let third_img = document.getElementById("third-img");
+
+        function changeColor(colorName) {
+            if (selectedColor !== colorName) {
+                if (colorName === "NaturalTitanium") {
+                    selectedColorImage = 1;
+                    img.src = `/images/iphone-15-${selectedColorImage}-${currentIndex}.webp`;
+                    selectedColorText.innerText = 'Natural Titanium'
+                }
+                else if (colorName === "BlueTitanium") {
+                    selectedColorImage = 2;
+                    img.src = `/images/iphone-15-${selectedColorImage}-${currentIndex}.webp`;
+                    selectedColorText.innerText = 'Blue Titanium'
+                }
+                else if (colorName === "WhiteTitanium") {
+                    selectedColorImage = 3;
+                    img.src = `/images/iphone-15-${selectedColorImage}-${currentIndex}.webp`;
+                    selectedColorText.innerText = 'White Titanium'
+                }
+                else if (colorName === "BlackTitanium") {
+                    selectedColorImage = 4;
+                    img.src = `/images/iphone-15-${selectedColorImage}-${currentIndex}.webp`;
+                    selectedColorText.innerText = 'Black Titanium'
+                }
+                sec_img.src = `./images/iphone-15-${selectedColorImage}-5.jpeg`;
+                third_img.src = `./images/iphone-15-${selectedColorImage}-6.jpeg`
+                selectedColor = colorName;
+
+                const allColor = document.getElementsByClassName("color-container");
+                for (var i = 0; i <= 3; i++) {
+                    allColor[i].classList.remove("selected")
+                }
+
+                document.getElementById(`${colorName}`).classList.add("selected");
+            }
+        }
+    </script>
+</body>
+
+</html>
